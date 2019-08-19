@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0DEDE"
+    tools:context=".activity.ToolActivity">
+
+    <Button
+        android:id="@+id/bt_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="水波纹"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/bt_ripple_bordless"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="水波纹"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_ripple">
+
+    </Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/bt_ripple"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="水波纹"
+        android:background="@drawable/bt_bg_ripple"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
